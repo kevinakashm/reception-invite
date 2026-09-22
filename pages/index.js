@@ -127,7 +127,7 @@ export default function Home() {
               <p className="time-line">6:00 PM TO 9:00 PM</p>
 
               <p className="address">
-                Marudhamalai Rd, Karai Gounder Layout, Mappillai Layout, Kongs Nagar,
+                Marudhamalai Rd, Karai Gounder Layout, Mappillai Layout, Kongu Nagar,
                 Kalveermapalayam, Coimbatore, Tamil Nadu 641046
               </p>
 
