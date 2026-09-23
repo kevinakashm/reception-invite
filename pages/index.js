@@ -132,8 +132,8 @@ export default function Home() {
               </p>
 
               <p className="invite-copy">
-                <h3>We said “I do” — now we’d love for you to say “I’ll be there!” ❤️ </h3>
-                Join us for an evening of good food, laughter, and togetherness as we celebrate our new beginning.
+                <h3>We’re getting ready for forever — we’d love to hear you say, “I’ll be there!”❤️ </h3>
+                Join us for an evening of love, laughter, and togetherness as we celebrate our new beginning.
               </p>
             </div>
 
@@ -165,7 +165,7 @@ export default function Home() {
           <section className="thankyou-section">
             <div className="thankyou-card">
               <p className="thankyou-text">
-                Bring your blessings, your smiles, and your appetite!
+                Bring your blessings, your smiles, and your best vibes!
                <br/>We'll bring the celebrations. Together, let’s make some memories!
               </p>
               <p className="section-kicker">With love</p>
