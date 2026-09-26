@@ -21,14 +21,16 @@ SUMMARY:Arvinth and Mohanapriya's Reception
 DESCRIPTION:Join us for an evening of love\, laughter\, dinner\, and celebration.
 LOCATION:K. C. Thirumana Mandapam\, Marudhamalai Rd\, Karai Gounder Layout\, Coimbatore\, Tamil Nadu 641046
 BEGIN:VALARM
+TRIGGER:-PT10080M
 ACTION:DISPLAY
-DESCRIPTION:Arvinth and Mohanapriya's Reception is in 1 week
-TRIGGER:-P7D
+DESCRIPTION:Reminder: Arvinth and Mohanapriya's Reception is in one week.
 END:VALARM
 BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Arvinth and Mohanapriya's Reception is in 1 week
 TRIGGER:-PT10080M
+ACTION:EMAIL
+SUMMARY:Reminder: Arvinth and Mohanapriya's Reception is in one week.
+DESCRIPTION:Reminder: Arvinth and Mohanapriya's Reception is in one week.
+ATTENDEE:mailto:guest@example.com
 END:VALARM
 END:VEVENT
 END:VCALENDAR
