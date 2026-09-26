@@ -162,6 +162,19 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="calendar-section" aria-labelledby="calendar-title">
+            <div className="calendar-card">
+              <div className="calendar-copy">
+                <p className="calendar-kicker">Save the date</p>
+                <h2 id="calendar-title">Add to calendar</h2>
+                <p>Set a reminder for our reception celebration.</p>
+              </div>
+              <a className="calendar-btn" href="/arvinth-mohanapriya-reception.ics" download>
+                Add event
+              </a>
+            </div>
+          </section>
+
           <section className="thankyou-section">
             <div className="thankyou-card">
               <p className="thankyou-text">

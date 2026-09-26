@@ -622,7 +622,97 @@ body {
 }
 
 .countdown-section {
-  margin-bottom: 48px;
+  margin-bottom: 28px;
+}
+
+.calendar-section {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 48px;
+}
+
+.calendar-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  overflow: hidden;
+  padding: 20px 21px;
+  border: 1px solid rgba(225, 192, 132, 0.42);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(48, 63, 68, 0.96), rgba(83, 58, 53, 0.97));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), inset 0 0 0 4px rgba(255,255,255,0.018), 0 18px 30px rgba(18, 12, 10, 0.28);
+  transition: transform 0.3s cubic-bezier(0.22, 0.8, 0.32, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.calendar-card::before {
+  content: "";
+  position: absolute;
+  top: -78px;
+  right: -38px;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: rgba(234, 190, 117, 0.12);
+}
+
+.calendar-copy,
+.calendar-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.calendar-kicker {
+  margin: 0 0 5px;
+  color: rgba(247, 222, 176, 0.82);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.calendar-copy h2 {
+  margin: 0;
+  color: #fff8eb;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.7rem, 6vw, 2.25rem);
+  line-height: 0.95;
+}
+
+.calendar-copy p:last-child {
+  margin: 8px 0 0;
+  color: rgba(255, 246, 232, 0.76);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.calendar-btn {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 239, 204, 0.5);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f0d198, #bc8d52);
+  color: #28201d;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.36), 0 8px 16px rgba(19, 12, 10, 0.23);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.calendar-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+.calendar-btn:focus-visible {
+  outline: 2px solid #fff4d6;
+  outline-offset: 3px;
 }
 
 .countdown-card,
@@ -663,6 +753,13 @@ body {
     transform: translateY(-7px) scale(1.008);
     border-color: rgba(245, 214, 155, 0.72);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), inset 0 0 0 5px rgba(255,255,255,0.03), 0 28px 40px rgba(18, 12, 10, 0.38);
+  }
+
+  .calendar-card:hover,
+  .calendar-card:focus-within {
+    transform: translateY(-6px);
+    border-color: rgba(245, 214, 155, 0.72);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), inset 0 0 0 4px rgba(255,255,255,0.03), 0 26px 38px rgba(18, 12, 10, 0.36);
   }
 }
 
@@ -902,6 +999,18 @@ body {
   }
 
   .map-btn {
+    width: 100%;
+  }
+
+  .calendar-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 21px 19px;
+    text-align: center;
+  }
+
+  .calendar-btn {
     width: 100%;
   }
 }
