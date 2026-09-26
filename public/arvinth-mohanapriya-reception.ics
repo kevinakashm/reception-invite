@@ -13,17 +13,22 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:arvinth-mohanapriya-reception-20261215@example.com
+UID:arvinth-mohanapriya-reception-20261215-v2@example.com
 DTSTAMP:20260926T000000Z
-DTSTART;TZID=Asia/Kolkata:20261215T180000
+DTSTART;TZID=Asia/Kolkata:20261215T190000
 DTEND;TZID=Asia/Kolkata:20261215T210000
 SUMMARY:Arvinth and Mohanapriya's Reception
 DESCRIPTION:Join us for an evening of love\, laughter\, dinner\, and celebration.
 LOCATION:K. C. Thirumana Mandapam\, Marudhamalai Rd\, Karai Gounder Layout\, Coimbatore\, Tamil Nadu 641046
 BEGIN:VALARM
-TRIGGER:-P7D
 ACTION:DISPLAY
-DESCRIPTION:Reminder: Arvinth and Mohanapriya's Reception is in one week.
+DESCRIPTION:Arvinth and Mohanapriya's Reception is in 1 week
+TRIGGER:-P7D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Arvinth and Mohanapriya's Reception is in 1 week
+TRIGGER:-PT10080M
 END:VALARM
 END:VEVENT
 END:VCALENDAR
